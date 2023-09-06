@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bjdo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-hbsn/devfile-sample-python-basic-bjdo@sha256:73773d16309aa488eaa3ae683bf6b91653a010618da4b75bac5cadd39c002b16
+        name: my-python
+        resources: {}
+status: {}
