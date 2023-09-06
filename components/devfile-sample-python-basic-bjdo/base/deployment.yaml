@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-bjdo
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/bootstrap/integration-e2e-tenant/integ-app-hbsn/devfile-sample-python-basic-bjdo@sha256:73773d16309aa488eaa3ae683bf6b91653a010618da4b75bac5cadd39c002b16
         name: my-python
         ports:
         - containerPort: 8081
